@@ -27,7 +27,17 @@ def insertion_sort_desc(arr):
     return arr
 
 if __name__ == "__main__":
-    array = [2,3,1,8,3,7,4,10,0]
-    print("Provided List:", array)
-    output = insertion_sort_desc(array)
-    print("Sorted List in Monotonically Decreasing Order:",output)
+    count = int(input("Please enter the number of elements you want to sort: "))
+
+    user_list = []
+
+    for i in range(count):
+        value = int(input(f"Enter element {i+1}: "))
+        user_list.append(value)
+
+    print("Provided list for sorting: ", user_list)
+
+    output = insertion_sort_desc(user_list)
+    print("Sorted List in Monotonically Decreasing Order: ",output)
+
+    
